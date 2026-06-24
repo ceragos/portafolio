@@ -11,15 +11,15 @@
   <!-- Subtle cyan border -->
   <rect width="512" height="512" rx="104" stroke="#00d4ff" stroke-width="14" stroke-opacity="0.35"/>
 
-  <!-- C: arc opening to the right, center (145,256) r=105, gap ±55° -->
+  <!-- C: arc opening to the right — tech-gold -->
   <path
     d="M 205 342 A 105 105 0 1 0 205 170"
-    stroke="#00d4ff"
+    stroke="#D4AF37"
     stroke-width="64"
     stroke-linecap="round"
   />
 
-  <!-- V: left-top (272,90) → bottom (376,422) → right-top (480,90) -->
+  <!-- V: chevron — primary-container cyan -->
   <path
     d="M 272 90 L 376 422 L 480 90"
     stroke="#00d4ff"
