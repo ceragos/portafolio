@@ -1,0 +1,50 @@
+---
+---
+
+<nav class="bg-surface-glass fixed top-0 w-full z-50 backdrop-blur-md border-b border-white/10 shadow-neon-glow flex justify-between items-center h-20 px-margin-desktop max-w-container-max mx-auto left-0 right-0">
+  <a href="/" class="font-headline-md text-headline-md font-bold text-primary tracking-tighter hover:text-primary-container transition-colors duration-300">
+    CValenciaIT
+  </a>
+
+  <div class="hidden md:flex items-center gap-8 font-technical-mono text-technical-mono">
+    <a class="text-on-surface-variant hover:text-primary-container transition-colors duration-300" href="#about" data-i18n="nav.about">About</a>
+    <a class="text-on-surface-variant hover:text-primary-container transition-colors duration-300" href="#stack" data-i18n="nav.stack">Stack</a>
+    <a class="text-on-surface-variant hover:text-primary-container transition-colors duration-300" href="#projects" data-i18n="nav.projects">Projects</a>
+    <a class="text-on-surface-variant hover:text-primary-container transition-colors duration-300" href="#experience" data-i18n="nav.experience">Experience</a>
+  </div>
+
+  <div class="hidden md:flex items-center gap-3">
+    <button class="lang-toggle font-technical-mono text-technical-mono text-on-surface-variant hover:text-primary-container border border-outline-variant hover:border-primary-container px-3 py-1.5 rounded transition-all duration-300">
+      ES
+    </button>
+    <a class="btn-primary font-technical-mono text-technical-mono px-6 py-2 rounded text-primary-container inline-block" href="#contact" data-i18n="nav.contact">
+      Contact Me
+    </a>
+  </div>
+
+  <button class="md:hidden text-primary-container" id="mobile-menu-btn" aria-label="Toggle menu">
+    <span class="material-symbols-outlined">menu</span>
+  </button>
+</nav>
+
+<div class="md:hidden fixed top-20 left-0 right-0 z-40 glass-panel border-b border-white/10 hidden" id="mobile-menu">
+  <div class="flex flex-col gap-4 p-6 font-technical-mono text-technical-mono">
+    <a class="text-on-surface-variant hover:text-primary-container transition-colors duration-300" href="#about" data-i18n="nav.about">About</a>
+    <a class="text-on-surface-variant hover:text-primary-container transition-colors duration-300" href="#stack" data-i18n="nav.stack">Stack</a>
+    <a class="text-on-surface-variant hover:text-primary-container transition-colors duration-300" href="#projects" data-i18n="nav.projects">Projects</a>
+    <a class="text-on-surface-variant hover:text-primary-container transition-colors duration-300" href="#experience" data-i18n="nav.experience">Experience</a>
+    <div class="flex items-center gap-3 mt-2">
+      <button class="lang-toggle text-on-surface-variant hover:text-primary-container border border-outline-variant hover:border-primary-container px-3 py-1.5 rounded transition-all duration-300">
+        ES
+      </button>
+      <a class="btn-primary flex-1 px-4 py-2 rounded text-primary-container text-center" href="#contact" data-i18n="nav.contact">Contact Me</a>
+    </div>
+  </div>
+</div>
+
+<script is:inline>
+  const btn = document.getElementById('mobile-menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+  menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => menu.classList.add('hidden')));
+</script>
