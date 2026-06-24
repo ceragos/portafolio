@@ -11,20 +11,15 @@
   <!-- Subtle cyan border -->
   <rect width="512" height="512" rx="104" stroke="#00d4ff" stroke-width="14" stroke-opacity="0.35"/>
 
-  <!-- C: arc opening to the right — tech-gold -->
-  <path
-    d="M 205 342 A 105 105 0 1 0 205 170"
-    stroke="#D4AF37"
-    stroke-width="64"
-    stroke-linecap="round"
-  />
+  <!-- C: borde delgado metálico en cyan, luego gold encima -->
+  <path d="M 205 342 A 105 105 0 1 0 205 170"
+    stroke="#00d4ff" stroke-width="80" stroke-linecap="round" stroke-opacity="0.85"/>
+  <path d="M 205 342 A 105 105 0 1 0 205 170"
+    stroke="#D4AF37" stroke-width="64" stroke-linecap="round"/>
 
-  <!-- V: chevron — primary-container cyan -->
-  <path
-    d="M 272 90 L 376 422 L 480 90"
-    stroke="#00d4ff"
-    stroke-width="64"
-    stroke-linecap="round"
-    stroke-linejoin="round"
-  />
+  <!-- V: borde delgado metálico en gold, luego cyan encima -->
+  <path d="M 272 90 L 376 422 L 480 90"
+    stroke="#D4AF37" stroke-width="80" stroke-linecap="round" stroke-linejoin="round" stroke-opacity="0.85"/>
+  <path d="M 272 90 L 376 422 L 480 90"
+    stroke="#00d4ff" stroke-width="64" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
