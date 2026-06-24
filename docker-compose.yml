@@ -1,0 +1,11 @@
+services:
+  portfolio:
+    build: .
+    container_name: cvalenciait-portfolio
+    restart: unless-stopped
+    networks:
+      - red-orquestador
+
+networks:
+  red-orquestador:
+    external: true
