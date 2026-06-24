@@ -1,13 +1,12 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
   <defs>
 
-    <!-- Fondo: radial sutil centrado para dar profundidad -->
     <radialGradient id="bg" cx="50%" cy="40%" r="65%">
       <stop offset="0%"   stop-color="#162844"/>
       <stop offset="100%" stop-color="#0D1E30"/>
     </radialGradient>
 
-    <!-- Metálico dorado (borde de la V) — sweep vertical oscuro→highlight→oscuro -->
+    <!-- Metálico dorado — borde de la C -->
     <linearGradient id="gold-metal" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%"   stop-color="#5C3610"/>
       <stop offset="22%"  stop-color="#C08830"/>
@@ -16,7 +15,7 @@
       <stop offset="100%" stop-color="#5C3610"/>
     </linearGradient>
 
-    <!-- Metálico cian (borde de la C) — sweep vertical oscuro→highlight→oscuro -->
+    <!-- Metálico cian — borde de la V -->
     <linearGradient id="cyan-metal" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0%"   stop-color="#062E3A"/>
       <stop offset="22%"  stop-color="#0F7A92"/>
@@ -27,21 +26,18 @@
 
   </defs>
 
-  <!-- Fondo navy del logo -->
+  <!-- Fondo -->
   <rect width="512" height="512" rx="104" fill="url(#bg)"/>
-  <!-- Borde exterior sutil -->
   <rect width="512" height="512" rx="104" stroke="#1B9EBB" stroke-width="12" stroke-opacity="0.3"/>
 
-  <!-- C: borde metálico cian (72) → dorado principal (64) → 4px borde visible -->
-  <path d="M 205 342 A 105 105 0 1 0 205 170"
-    stroke="url(#cyan-metal)" stroke-width="72" stroke-linecap="round"/>
-  <path d="M 205 342 A 105 105 0 1 0 205 170"
+  <path d="M 329 383 A 155 155 0 1 0 329 129"
+    stroke="url(#gold-metal)" stroke-width="72" stroke-linecap="round"/>
+  <path d="M 329 383 A 155 155 0 1 0 329 129"
     stroke="#DFB175" stroke-width="64" stroke-linecap="round"/>
 
-  <!-- V: borde metálico dorado (72) → cian principal (64) → 4px borde visible -->
-  <path d="M 272 90 L 376 422 L 480 90"
-    stroke="url(#gold-metal)" stroke-width="72" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M 272 90 L 376 422 L 480 90"
-    stroke="#1B9EBB" stroke-width="64" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 182 188 L 240 346 L 298 188"
+    stroke="url(#cyan-metal)" stroke-width="68" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M 182 188 L 240 346 L 298 188"
+    stroke="#1B9EBB" stroke-width="60" stroke-linecap="round" stroke-linejoin="round"/>
 
 </svg>
