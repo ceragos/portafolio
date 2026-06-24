@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0d2235"/>
+      <stop offset="100%" stop-color="#060f17"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background: dark navy, iOS-style rounded corners -->
+  <rect width="512" height="512" rx="104" fill="url(#bg)"/>
+  <!-- Subtle cyan border -->
+  <rect width="512" height="512" rx="104" stroke="#00d4ff" stroke-width="14" stroke-opacity="0.35"/>
+
+  <!-- C: arc opening to the right, center (145,256) r=105, gap ±55° -->
+  <path
+    d="M 205 342 A 105 105 0 1 0 205 170"
+    stroke="#00d4ff"
+    stroke-width="64"
+    stroke-linecap="round"
+  />
+
+  <!-- V: left-top (272,90) → bottom (376,422) → right-top (480,90) -->
+  <path
+    d="M 272 90 L 376 422 L 480 90"
+    stroke="#00d4ff"
+    stroke-width="64"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
