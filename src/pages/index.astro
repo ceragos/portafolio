@@ -1,0 +1,332 @@
+---
+import Base from '../layouts/Base.astro';
+import Nav from '../components/Nav.astro';
+import ShaderBackground from '../components/ShaderBackground.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Base>
+  <ShaderBackground />
+  <Nav />
+
+  <main class="flex-grow z-10 relative pt-24 pb-20">
+
+    <!-- Hero -->
+    <section class="min-h-[80vh] flex flex-col items-center justify-center text-center px-margin-desktop max-w-container-max mx-auto mt-12 mb-24 fade-in-up" style="animation-delay: 0.1s;">
+      <div class="mb-8 relative group">
+        <div class="w-48 h-48 rounded-full bg-surface-glass border-2 border-primary-container p-4 flex items-center justify-center shadow-[0_0_30px_rgba(0,212,255,0.2)] group-hover:shadow-[0_0_50px_rgba(0,212,255,0.4)] transition-all duration-500 relative overflow-hidden">
+          <img
+            alt="CValenciaIT Logo"
+            class="w-full h-full object-contain relative z-10"
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgQX9xJS0zvaCYWoJTEsbKYnDcMmVg4zAtbbLlbenLYGMuJ6Uld8faHX6wkRSIK1BGAqYyYhYIgI57EU-6I1ZuvDUUldN_VyjQijvHPPwo9wA8g_lXvIzGbxGsil3un6rf8BX7-tEvLoVDnycCMIsHdO3LBCCYRBanMwo4qhi8znQarTNSpr2CSHMh4ey62mvuL-frxbUFjxuEq8zZtVInMQDOBqSK5rNTZWzyMJGHtKFv8tcRHSA1NwfsBJpoGmFVrDioj5vh0_ve"
+          />
+        </div>
+      </div>
+      <h1 class="font-headline-xl text-headline-xl text-on-surface mb-6 max-w-4xl" data-i18n="hero.headline">
+        Engineering Decides;<br />
+        <span class="text-primary-container">AI Accelerates</span>
+      </h1>
+      <p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl mb-12" data-i18n="hero.subtitle">
+        Senior Backend &amp; Applied AI Engineer specializing in production-ready Generative AI and scalable systems.
+      </p>
+      <div class="flex flex-col sm:flex-row gap-6">
+        <a class="btn-primary font-technical-mono text-technical-mono px-8 py-4 rounded text-primary-container flex items-center gap-2 justify-center" href="#projects">
+          <span class="material-symbols-outlined text-[20px]">code</span>
+          <span data-i18n="hero.cta.projects">View Projects</span>
+        </a>
+        <a class="glass-panel font-technical-mono text-technical-mono px-8 py-4 rounded text-on-surface hover:text-primary-container transition-colors flex items-center gap-2 justify-center border border-outline-variant" href="#contact">
+          <span class="material-symbols-outlined text-[20px]">mail</span>
+          <span data-i18n="hero.cta.contact">Contact Me</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="px-margin-desktop max-w-container-max mx-auto py-20 fade-in-up" id="about" style="animation-delay: 0.2s;">
+      <h2 class="font-headline-lg text-headline-lg text-primary-container mb-8 flex items-center gap-4">
+        <span class="material-symbols-outlined text-3xl">person</span>
+        <span data-i18n="about.heading">About Me</span>
+      </h2>
+      <div class="glass-panel rounded-xl p-8 border border-outline-variant">
+        <p class="mb-6 text-on-surface-variant leading-relaxed" data-i18n="about.para1">
+          I am a <strong>proactive, patient, and collaborative</strong> Senior Backend &amp; Applied AI Engineer.
+          Clinical management teams querying hospital operational and financial KPIs in natural language — no static
+          dashboards required: that is what I built and shipped to production. My differentiator is real generative AI
+          in production, not on the whiteboard: I founded and am the principal contributor of Go Ecosystem Digital
+          Health's three-component GenAI platform.
+        </p>
+        <p class="mb-8 text-on-surface-variant leading-relaxed" data-i18n="about.para2">
+          The backend foundation underpinning that differentiator is deep and long-running. I am the principal author
+          of Go Ecosystem Digital Health's clinical backend RCF API — the Django/DRF REST engine powering the hospital
+          mobile app integrating legacy HIS systems and external laboratory providers. AI does not replace the
+          fundamentals — it amplifies them. I command Python, Django and Linux at a level that lets me orchestrate NLP
+          models and resolve async deadlocks in production. <strong>AI accelerates; engineering decides.</strong>
+        </p>
+        <h3 class="font-technical-mono text-technical-mono text-primary-container mb-6 text-xl" data-i18n="about.numbers">By the Numbers</h3>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div class="glass-panel p-6 rounded-lg text-center border border-outline-variant hover:border-primary-container transition-all duration-300">
+            <div class="text-3xl font-bold text-on-surface mb-2">7+</div>
+            <div class="text-sm text-text-muted font-technical-mono" data-i18n="about.years">Years Experience</div>
+          </div>
+          <div class="glass-panel p-6 rounded-lg text-center border border-outline-variant hover:border-primary-container transition-all duration-300">
+            <div class="text-3xl font-bold text-on-surface mb-2">19</div>
+            <div class="text-sm text-text-muted font-technical-mono" data-i18n="about.proj">Projects</div>
+          </div>
+          <div class="glass-panel p-6 rounded-lg text-center border border-outline-variant hover:border-primary-container transition-all duration-300">
+            <div class="text-3xl font-bold text-on-surface mb-2">9</div>
+            <div class="text-sm text-text-muted font-technical-mono" data-i18n="about.orgs">Organizations</div>
+          </div>
+          <div class="glass-panel p-6 rounded-lg text-center border border-outline-variant hover:border-primary-container transition-all duration-300">
+            <div class="text-3xl font-bold text-on-surface mb-2">3,215</div>
+            <div class="text-sm text-text-muted font-technical-mono" data-i18n="about.commits">Commits in RCF API</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stack -->
+    <section class="px-margin-desktop max-w-container-max mx-auto py-20 fade-in-up" id="stack" style="animation-delay: 0.3s;">
+      <h2 class="font-headline-lg text-headline-lg text-primary-container mb-8 flex items-center gap-4">
+        <span class="material-symbols-outlined text-3xl">memory</span>
+        <span data-i18n="stack.heading">Skills &amp; Technologies</span>
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="glass-panel p-8 rounded-xl border border-outline-variant hover:shadow-[0_0_20px_rgba(0,212,255,0.15)] transition-all">
+          <h3 class="font-headline-md text-xl text-on-surface mb-6 flex items-center gap-3">
+            <span class="material-symbols-outlined text-primary-container">psychology</span>
+            Generative AI
+          </h3>
+          <div class="flex flex-wrap gap-3">
+            <span class="tech-pill px-4 py-2 rounded-full text-sm">LangGraph</span>
+            <span class="tech-pill px-4 py-2 rounded-full text-sm">RAG (pgvector/HNSW)</span>
+            <span class="tech-pill px-4 py-2 rounded-full text-sm">LangChain</span>
+            <span class="tech-pill px-4 py-2 rounded-full text-sm">Ollama</span>
+            <span class="tech-pill px-4 py-2 rounded-full text-sm">Langfuse</span>
+          </div>
+        </div>
+        <div class="glass-panel p-8 rounded-xl border border-outline-variant hover:shadow-[0_0_20px_rgba(0,212,255,0.15)] transition-all">
+          <h3 class="font-headline-md text-xl text-on-surface mb-6 flex items-center gap-3">
+            <span class="material-symbols-outlined text-primary-container">terminal</span>
+            Backend &amp; APIs
+          </h3>
+          <div class="flex flex-wrap gap-3">
+            <span class="tech-pill px-4 py-2 rounded-full text-sm">Python</span>
+            <span class="tech-pill px-4 py-2 rounded-full text-sm">Django</span>
+            <span class="tech-pill px-4 py-2 rounded-full text-sm">DRF</span>
+            <span class="tech-pill px-4 py-2 rounded-full text-sm">Node.js</span>
+            <span class="tech-pill px-4 py-2 rounded-full text-sm">Express</span>
+          </div>
+        </div>
+        <div class="glass-panel p-8 rounded-xl border border-outline-variant hover:shadow-[0_0_20px_rgba(0,212,255,0.15)] transition-all">
+          <h3 class="font-headline-md text-xl text-on-surface mb-6 flex items-center gap-3">
+            <span class="material-symbols-outlined text-primary-container">database</span>
+            Data
+          </h3>
+          <div class="flex flex-wrap gap-3">
+            <span class="tech-pill px-4 py-2 rounded-full text-sm">PostgreSQL</span>
+            <span class="tech-pill px-4 py-2 rounded-full text-sm">SQL Server</span>
+            <span class="tech-pill px-4 py-2 rounded-full text-sm">XMLA .NET</span>
+            <span class="tech-pill px-4 py-2 rounded-full text-sm">Power BI</span>
+          </div>
+        </div>
+        <div class="glass-panel p-8 rounded-xl border border-outline-variant hover:shadow-[0_0_20px_rgba(0,212,255,0.15)] transition-all">
+          <h3 class="font-headline-md text-xl text-on-surface mb-6 flex items-center gap-3">
+            <span class="material-symbols-outlined text-primary-container">cloud</span>
+            DevOps &amp; Infra
+          </h3>
+          <div class="flex flex-wrap gap-3">
+            <span class="tech-pill px-4 py-2 rounded-full text-sm">Linux</span>
+            <span class="tech-pill px-4 py-2 rounded-full text-sm">Docker</span>
+            <span class="tech-pill px-4 py-2 rounded-full text-sm">CI/CD</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="px-margin-desktop max-w-container-max mx-auto py-20 fade-in-up" id="projects" style="animation-delay: 0.4s;">
+      <h2 class="font-headline-lg text-headline-lg text-primary-container mb-8 flex items-center gap-4">
+        <span class="material-symbols-outlined text-3xl">code_blocks</span>
+        <span data-i18n="projects.heading">Featured Projects</span>
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+        <div class="glass-panel rounded-xl border border-outline-variant overflow-hidden flex flex-col group hover:border-primary-container transition-all duration-300">
+          <div class="p-8 flex-grow">
+            <h3 class="font-headline-md text-2xl text-on-surface mb-3 group-hover:text-primary-container transition-colors" data-i18n="proj1.title">Generative AI Predictability Platform</h3>
+            <p class="text-sm text-primary-container font-technical-mono mb-4" data-i18n="proj1.company">Go Ecosystem Digital Health</p>
+            <p class="text-on-surface-variant mb-6 text-sm" data-i18n="proj1.desc">Conversational CMI for clinical management: LangGraph agents for analytical queries, RAG with pgvector (HNSW) over KPI tables, Langfuse observability, and XMLA .NET client for Power BI Fabric integration. Successfully stabilized in production by resolving async deadlocks and SIGABRT fixes.</p>
+            <div class="bg-surface-container-highest p-4 rounded-lg border-l-2 border-primary-container">
+              <p class="text-xs font-technical-mono text-on-surface">
+                <strong class="text-primary-container" data-i18n="achievement.label">Key Achievement:</strong>
+                <span data-i18n="proj1.achievement"> clinical management now queries hospital operational and financial KPIs in natural language with no dependency on static dashboards.</span>
+              </p>
+            </div>
+          </div>
+          <div class="bg-surface-container-lowest p-4 border-t border-outline-variant flex flex-wrap gap-2">
+            <span class="text-xs text-text-muted font-technical-mono px-2 py-1 bg-surface-container rounded">LangGraph</span>
+            <span class="text-xs text-text-muted font-technical-mono px-2 py-1 bg-surface-container rounded">RAG/pgvector</span>
+            <span class="text-xs text-text-muted font-technical-mono px-2 py-1 bg-surface-container rounded">XMLA .NET</span>
+          </div>
+        </div>
+
+        <div class="glass-panel rounded-xl border border-outline-variant overflow-hidden flex flex-col group hover:border-primary-container transition-all duration-300">
+          <div class="p-8 flex-grow">
+            <h3 class="font-headline-md text-2xl text-on-surface mb-3 group-hover:text-primary-container transition-colors" data-i18n="proj2.title">RCF API (Registro Clínico Fácil)</h3>
+            <p class="text-sm text-primary-container font-technical-mono mb-4">Go Ecosystem Digital Health</p>
+            <p class="text-on-surface-variant mb-6 text-sm" data-i18n="proj2.desc">Deepest backend project (63 months). Clinical REST backend (Django/DRF) powering the hospital mobile app: clinical records, triage, hospitalization; integrates Hosvital HIS via raw SQL Server, SOAP and external lab connections.</p>
+            <div class="bg-surface-container-highest p-4 rounded-lg border-l-2 border-primary-container">
+              <p class="text-xs font-technical-mono text-on-surface">
+                <strong class="text-primary-container" data-i18n="achievement.label">Key Achievement:</strong>
+                <span data-i18n="proj2.achievement"> principal author of Go Ecosystem Digital Health's long-running clinical backend — 3,215 commits over 63 months, integrating legacy HIS.</span>
+              </p>
+            </div>
+          </div>
+          <div class="bg-surface-container-lowest p-4 border-t border-outline-variant flex flex-wrap gap-2">
+            <span class="text-xs text-text-muted font-technical-mono px-2 py-1 bg-surface-container rounded">Python</span>
+            <span class="text-xs text-text-muted font-technical-mono px-2 py-1 bg-surface-container rounded">Django DRF</span>
+            <span class="text-xs text-text-muted font-technical-mono px-2 py-1 bg-surface-container rounded">Hosvital HIS</span>
+          </div>
+        </div>
+
+        <div class="glass-panel rounded-xl border border-outline-variant overflow-hidden flex flex-col group hover:border-primary-container transition-all duration-300">
+          <div class="p-8 flex-grow">
+            <h3 class="font-headline-md text-2xl text-on-surface mb-3 group-hover:text-primary-container transition-colors" data-i18n="proj3.title">Evazard SaaS POS</h3>
+            <p class="text-sm text-primary-container font-technical-mono mb-4">CValenciaIT</p>
+            <p class="text-on-surface-variant mb-6 text-sm" data-i18n="proj3.desc">Solo-built SaaS point-of-sale platform for SMBs with 24 domain controllers: catalog, recurring and installment sales, cash registers, quotes, Mercado Pago subscription plans, and React Native mobile app.</p>
+            <div class="bg-surface-container-highest p-4 rounded-lg border-l-2 border-primary-container">
+              <p class="text-xs font-technical-mono text-on-surface">
+                <strong class="text-primary-container" data-i18n="achievement.label">Key Achievement:</strong>
+                <span data-i18n="proj3.achievement"> under the CValenciaIT brand, shipped three complete products from idea to production solo — demonstrating end-to-end ownership.</span>
+              </p>
+            </div>
+          </div>
+          <div class="bg-surface-container-lowest p-4 border-t border-outline-variant flex flex-wrap gap-2">
+            <span class="text-xs text-text-muted font-technical-mono px-2 py-1 bg-surface-container rounded">Node.js</span>
+            <span class="text-xs text-text-muted font-technical-mono px-2 py-1 bg-surface-container rounded">React</span>
+            <span class="text-xs text-text-muted font-technical-mono px-2 py-1 bg-surface-container rounded">24 Domain Controllers</span>
+          </div>
+        </div>
+
+        <div class="glass-panel rounded-xl border border-outline-variant overflow-hidden flex flex-col group hover:border-primary-container transition-all duration-300">
+          <div class="p-8 flex-grow">
+            <h3 class="font-headline-md text-2xl text-on-surface mb-3 group-hover:text-primary-container transition-colors" data-i18n="proj4.title">Incheck Modules</h3>
+            <p class="text-sm text-primary-container font-technical-mono mb-4">Incheck SAS</p>
+            <p class="text-on-surface-variant mb-6 text-sm" data-i18n="proj4.desc">Multi-tenant Occupational Safety and Health (OSH) SaaS leveraging django-tenants for schema isolation architecture, featuring robust inventory modules and async Excel imports.</p>
+            <div class="bg-surface-container-highest p-4 rounded-lg border-l-2 border-primary-container">
+              <p class="text-xs font-technical-mono text-on-surface">
+                <strong class="text-primary-container" data-i18n="achievement.label">Key Achievement:</strong>
+                <span data-i18n="proj4.achievement"> designed and implemented end-to-end multi-tenant schema isolation and robust async processing.</span>
+              </p>
+            </div>
+          </div>
+          <div class="bg-surface-container-lowest p-4 border-t border-outline-variant flex flex-wrap gap-2">
+            <span class="text-xs text-text-muted font-technical-mono px-2 py-1 bg-surface-container rounded">Django Tenants</span>
+            <span class="text-xs text-text-muted font-technical-mono px-2 py-1 bg-surface-container rounded">Schema Isolation</span>
+            <span class="text-xs text-text-muted font-technical-mono px-2 py-1 bg-surface-container rounded">Async Tasks</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="px-margin-desktop max-w-container-max mx-auto py-20 fade-in-up" id="experience" style="animation-delay: 0.5s;">
+      <h2 class="font-headline-lg text-headline-lg text-primary-container mb-12 flex items-center gap-4">
+        <span class="material-symbols-outlined text-3xl">work_history</span>
+        <span data-i18n="exp.heading">Experience</span>
+      </h2>
+      <div class="relative ml-4 md:ml-8">
+        <div class="absolute left-[7px] top-2 bottom-2 w-0.5 bg-primary-container/30"></div>
+
+        <div class="relative pl-10 mb-12">
+          <div class="absolute left-0 top-1.5 w-4 h-4 rounded-full timeline-dot border-4 border-background"></div>
+          <h3 class="font-headline-md text-xl text-on-surface" data-i18n="exp1.title">Senior Backend &amp; Applied AI Engineer</h3>
+          <p class="font-technical-mono text-primary-container text-sm my-2" data-i18n="exp1.period">Go Ecosystem Digital Health | 2021 - Present</p>
+          <p class="text-on-surface-variant text-sm mt-3" data-i18n="exp1.desc">Designed and deployed end-to-end the three-component GenAI platform for clinical predictability. Took ownership of the RCF API backend as principal author, powering the hospital mobile application across its full lifecycle. Orchestrated NLP models and resolved complex production deadlocks.</p>
+        </div>
+
+        <div class="relative pl-10 mb-12">
+          <div class="absolute left-0 top-1.5 w-4 h-4 rounded-full timeline-dot border-4 border-background"></div>
+          <h3 class="font-headline-md text-xl text-on-surface" data-i18n="exp2.title">Founder &amp; Full-Stack Lead</h3>
+          <p class="font-technical-mono text-primary-container text-sm my-2" data-i18n="exp2.period">CValenciaIT | 2022 - Present</p>
+          <p class="text-on-surface-variant text-sm mt-3" data-i18n="exp2.desc">Shipped Evazard solo, a SaaS POS platform for SMBs with 24 domain controllers. Built Vio La Suerte full-stack and provided technical direction and mentorship. Shipped multiple complete products from idea to production solo.</p>
+        </div>
+
+        <div class="relative pl-10 mb-12">
+          <div class="absolute left-0 top-1.5 w-4 h-4 rounded-full timeline-dot border-4 border-background"></div>
+          <h3 class="font-headline-md text-xl text-on-surface" data-i18n="exp3.title">Backend Engineer</h3>
+          <p class="font-technical-mono text-primary-container text-sm my-2" data-i18n="exp3.period">Incheck SAS | 2024 - Present</p>
+          <p class="text-on-surface-variant text-sm mt-3" data-i18n="exp3.desc">Designed and implemented end-to-end the inventory module for the multi-tenant occupational health SaaS on a django-tenants schema-based isolation architecture, alongside async Excel imports.</p>
+        </div>
+
+        <div class="relative pl-10">
+          <div class="absolute left-0 top-1.5 w-4 h-4 rounded-full timeline-dot border-4 border-background"></div>
+          <h3 class="font-headline-md text-xl text-on-surface" data-i18n="exp4.title">Lead Backend Engineer</h3>
+          <p class="font-technical-mono text-primary-container text-sm my-2" data-i18n="exp4.period">City of Cali (SGCPS/Awako) | 2023</p>
+          <p class="text-on-surface-variant text-sm mt-3" data-i18n="exp4.desc">Led the Government Contract Management System backend as majority contributor, covering the full pre-contractual-to-invoicing lifecycle with Django/DRF.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="px-margin-desktop max-w-container-max mx-auto py-16 fade-in-up" id="certifications" style="animation-delay: 0.6s;">
+      <h2 class="font-headline-md text-xl text-primary-container mb-8 flex items-center gap-3">
+        <span class="material-symbols-outlined text-2xl">school</span>
+        <span data-i18n="edu.heading">Education &amp; Certifications</span>
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="glass-panel p-6 rounded-lg border border-outline-variant/50">
+          <h4 class="font-headline-md text-lg text-on-surface" data-i18n="edu1.title">Information Systems Engineering</h4>
+          <p class="text-text-muted text-sm mt-2 font-technical-mono">Corporaci&oacute;n Universitaria Remington</p>
+        </div>
+        <div class="glass-panel p-6 rounded-lg border border-outline-variant/50">
+          <h4 class="font-headline-md text-lg text-on-surface" data-i18n="edu2.title">Software Programming Technician</h4>
+          <p class="text-text-muted text-sm mt-2 font-technical-mono">SENA</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="px-margin-desktop max-w-container-max mx-auto py-24 fade-in-up" id="contact" style="animation-delay: 0.7s;">
+      <div class="glass-panel rounded-2xl p-10 md:p-16 border-2 border-primary-container/50 text-center relative overflow-hidden shadow-[0_0_40px_rgba(0,212,255,0.15)]">
+        <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary-container to-transparent"></div>
+        <h2 class="font-headline-xl text-4xl text-on-surface mb-4" data-i18n="contact.heading">Let's Build Something Scalable</h2>
+        <p class="text-on-surface-variant max-w-2xl mx-auto mb-10 text-lg" data-i18n="contact.subtitle">Looking to deploy generative AI in production or build a robust backend architecture? Let's connect.</p>
+        <form class="max-w-md mx-auto mb-10 text-left" id="contact-form">
+          <div class="mb-4">
+            <input class="w-full bg-surface-container-highest border border-outline-variant text-on-surface rounded px-4 py-3 focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container transition-all" placeholder="Name" type="text" name="name" required data-i18n-ph="contact.name" />
+          </div>
+          <div class="mb-4">
+            <input class="w-full bg-surface-container-highest border border-outline-variant text-on-surface rounded px-4 py-3 focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container transition-all" placeholder="Email" type="email" name="email" required data-i18n-ph="contact.email" />
+          </div>
+          <div class="mb-6">
+            <textarea class="w-full bg-surface-container-highest border border-outline-variant text-on-surface rounded px-4 py-3 focus:outline-none focus:border-primary-container focus:ring-1 focus:ring-primary-container transition-all resize-none" placeholder="Message" rows="4" name="message" required data-i18n-ph="contact.message"></textarea>
+          </div>
+          <button class="btn-primary font-technical-mono w-full py-4 rounded text-primary-container font-bold text-lg hover:shadow-[0_0_20px_rgba(0,212,255,0.4)]" type="submit" data-i18n="contact.send">
+            Send Message
+          </button>
+        </form>
+        <div class="flex justify-center gap-6">
+          <a class="w-12 h-12 rounded-full bg-surface-container-highest border border-outline-variant flex items-center justify-center text-on-surface hover:text-primary-container hover:border-primary-container transition-all" href="https://github.com/ceragos" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <span class="material-symbols-outlined">code</span>
+          </a>
+          <a class="w-12 h-12 rounded-full bg-surface-container-highest border border-outline-variant flex items-center justify-center text-on-surface hover:text-primary-container hover:border-primary-container transition-all" href="https://www.linkedin.com/in/jes%C3%BAs-casta%C3%B1eda/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <span class="material-symbols-outlined">work</span>
+          </a>
+          <a class="w-12 h-12 rounded-full bg-surface-container-highest border border-outline-variant flex items-center justify-center text-on-surface hover:text-primary-container hover:border-primary-container transition-all" href="mailto:jesus.a.castaneda.v@gmail.com" aria-label="Email">
+            <span class="material-symbols-outlined">mail</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <Footer />
+</Base>
+
+<script>
+  import { initLang } from '../scripts/i18n';
+  initLang();
+</script>

@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-color: #0e1417;
+    color: #dde3e7;
+    scroll-behavior: smooth;
+}
+
+.glass-panel {
+    background: rgba(10, 31, 50, 0.6);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.neon-border {
+    border: 1px solid #00d4ff;
+    box-shadow: 0 0 15px rgba(0, 212, 255, 0.3);
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, rgba(10, 31, 50, 0.8) 0%, rgba(0, 88, 107, 0.8) 100%);
+    border: 1px solid #00d4ff;
+    box-shadow: 0 0 15px rgba(0, 212, 255, 0.3);
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    box-shadow: 0 0 25px rgba(0, 212, 255, 0.6);
+    border-width: 2px;
+}
+
+.tech-pill {
+    background-color: #080f12;
+    color: #00d4ff;
+    font-family: 'JetBrains Mono', monospace;
+    border: 1px solid rgba(0, 212, 255, 0.3);
+}
+
+.timeline-dot {
+    background-color: #D4AF37;
+    box-shadow: 0 0 10px #D4AF37;
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.8s ease-out forwards;
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
